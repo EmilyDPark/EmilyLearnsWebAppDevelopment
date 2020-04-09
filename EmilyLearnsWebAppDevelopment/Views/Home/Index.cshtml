@@ -1,0 +1,145 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .bg-1 {
+            background-color: #1abc9c; /* Green */
+            color: #ffffff;
+        }
+
+        .bg-2 {
+            background-color: #474e5d; /* Dark Blue */
+            color: #ffffff;
+        }
+
+        .bg-3 {
+            background-color: #ffffff; /* White */
+            color: #555555;
+        }
+
+        .bg-4 {
+            background-color: #2f2f2f; /* Black Gray */
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <br />
+    <div class="container bg-1 py-5 mb-5 text-white">
+        <h1 class="display-4">My name is Emily.</h1>
+        <p class="lead mb-5">I am a student in the Microsoft Software & Skills Academy in a Cloud App Development cohort. This website is a platform for me to implement the the things I learn while studying ASP.NET Core.</p>
+    </div>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading -->
+        <h1 class="my-4">
+            Projects<span style="display:inline-block; width:20px;"></span>
+            <small>Following labs with a twist.</small>
+        </h1>
+
+        <div class="row">
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top" src="~/projectimages/module1.png" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="@Url.Action("Index","Creations")">A Look at My Creations</a>
+                        </h4>
+                        <p class="card-text">The original lab displays animals. I've changed it to display a few random items I've made using various mediums.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top" src="~/projectimages/module2.png" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="@Url.Action("BadClick","Home")">Don't Click</a>
+                        </h4>
+                        <p class="card-text">This lab was focused on planning models, views, and controllers in a document and some design work with xaml. Nothing to see here...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top" src="~/projectimages/module3.png" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="#">Module 3</a>
+                        </h4>
+                        <p class="card-text">Configure Middeware and Systems in ASP.NET Core</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top" src="~/projectimages/module4.png" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="#">Module 4</a>
+                        </h4>
+                        <p class="card-text">Developing Controllers</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top" src="~/projectimages/module5.png" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="#">Module 5</a>
+                        </h4>
+                        <p class="card-text">Developing Views</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top" src="~/projectimages/module6.png" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="#">Module 6</a>
+                        </h4>
+                        <p class="card-text">Developing Models</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+        <!-- Pagination -->
+        @*<ul class="pagination justify-content-center">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                </a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </li>
+        </ul>*@
+
+    </div>
+    <!-- /.container -->
+
+
+</body>
+</html>

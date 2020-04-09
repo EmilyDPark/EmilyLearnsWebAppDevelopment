@@ -1,0 +1,48 @@
+﻿@model EmilyLearnsWebAppDevelopment.Models.CreationIndexViewModel
+
+@{
+    ViewData["Title"] = "A Look at My Creations";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>A Look at My Creations</title>
+</head>
+<body>
+    <br />
+    <h2>A Look at My Creations</h2>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Creations[0].Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Creations[0].Medium)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Creations)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Medium)
+                    </td>
+                    <td>
+                        <a asp-action="Details" asp-route-id="@item.Id">Details</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>
