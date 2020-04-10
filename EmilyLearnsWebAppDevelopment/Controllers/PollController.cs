@@ -29,6 +29,8 @@ namespace EmilyLearnsWebAppDevelopment.Controllers
                 {
                     results.Append($"Color name: {gameVotes.Key}. Votes: {gameVotes.Value}{Environment.NewLine}");
                 }
+                results.Append("\n\nUse your browser's back button to vote again or return to the home page.");
+
 
                 return Content(results.ToString());
             }

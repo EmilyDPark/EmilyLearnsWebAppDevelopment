@@ -7,7 +7,7 @@ namespace EmilyLearnsWebAppDevelopment.Services
 {
     public enum SelectedColor
     {
-        BabyBlue,
+        Black,
         Blue,
         Green,
         Orange,

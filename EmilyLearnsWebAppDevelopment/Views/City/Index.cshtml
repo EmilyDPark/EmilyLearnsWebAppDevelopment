@@ -1,0 +1,64 @@
+﻿
+@{
+    ViewData["Title"] = "Travel the World";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Page"]</title>
+    <link type="text/css" rel="stylesheet" href="~/css/citystyle.css" asp-append-version="true" /> <!-- A fix to get chrome to refresh css -->
+    @*<script src="~/js/app.js" asp-append-version="true"></script>*@ <!-- A fix to get chrome to refresh css -->
+    <style>
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+
+        .blue {
+            color: #0a0eec;
+        }
+
+        .yello {
+            color: #e6c00f;
+        }
+
+        .purple {
+            color: #70259d;
+        }
+
+        .green {
+            color: #157551;
+        }
+
+        .red {
+            color: #e30000;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="main-titel">Welcome to my dream</h1><br/>
+    <h3 class="into">These are a few cities I want to visit.</h3><br/>
+    <h5 class="into">Search for and click on 
+        <span class="blue"><b>London</b></span>, 
+        <span class="yello"><b>Sydney</b></span>, 
+        <span class="purple"><b>Anchorage</b></span>, 
+        <span class="green"><b>Rome</b></span>, and
+        <span class="red"><b>Tokyo</b></span>
+        on the map</h5><br/>
+    <div class="center">
+        <img class="worldmap" src="~/cityimages/world.jpg" usemap="#worldmap" />
+    </div>
+    <map name="worldmap">
+        <area alt="London" shape="circle" coords="663,296,25" href="@Url.Action("Details", "City", new { id = 1 })">
+        <area alt="Sydney" shape="circle" coords="1240,683,25" href="@Url.Action("Details", "City", new { id = 2 })">
+        <area alt="Anchorage" shape="circle" coords="159,180,25" href="@Url.Action("Details", "City", new { id = 3 })">
+        <area alt="Rome" shape="circle" coords="708,343,25" href="@Url.Action("Details", "City", new { id = 4 })">
+        <area alt="Tokyo" shape="circle" coords="1194,356,25" href="@Url.Action("Details", "City", new { id = 5 })">
+    </map>
+</body>
+</html>

@@ -113,3 +113,6 @@ C:\Users\emily\Desktop\CSC390 Developing ASP.NET Web Applications\EmilyLearnsWeb
 C:\Users\emily\Desktop\CSC390 Developing ASP.NET Web Applications\EmilyLearnsWebAppDevelopment\EmilyLearnsWebAppDevelopment\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
 C:\Users\emily\Desktop\CSC390 Developing ASP.NET Web Applications\EmilyLearnsWebAppDevelopment\EmilyLearnsWebAppDevelopment\obj\Debug\netcoreapp3.1\Razor\Views\Home\BadClick.cshtml.g.cs
 C:\Users\emily\Desktop\CSC390 Developing ASP.NET Web Applications\EmilyLearnsWebAppDevelopment\EmilyLearnsWebAppDevelopment\obj\Debug\netcoreapp3.1\Razor\Views\Poll\Index.cshtml.g.cs
+C:\Users\emily\Desktop\CSC390 Developing ASP.NET Web Applications\EmilyLearnsWebAppDevelopment\EmilyLearnsWebAppDevelopment\obj\Debug\netcoreapp3.1\Razor\Views\City\Index.cshtml.g.cs
+C:\Users\emily\Desktop\CSC390 Developing ASP.NET Web Applications\EmilyLearnsWebAppDevelopment\EmilyLearnsWebAppDevelopment\obj\Debug\netcoreapp3.1\Razor\Views\City\Details.cshtml.g.cs
+C:\Users\emily\Desktop\CSC390 Developing ASP.NET Web Applications\EmilyLearnsWebAppDevelopment\EmilyLearnsWebAppDevelopment\obj\Debug\netcoreapp3.1\Razor\Views\Traveler\Index.cshtml.g.cs

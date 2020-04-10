@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "Travel the World";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"]</title>
+    <link type="text/css" rel="stylesheet" href="~/css/citystyle.css" asp-append-version="true" /> <!-- A fix to get chrome to refresh css -->
+</head>
+<body>
+    <h3 class="main-titel">Hello @ViewBag.VisiterName</h3>
+    <h5 class="into">Here are a few pictures that were taken in my world journey</h5>
+    <div class="img-container">
+        <div class="photo-index-card">
+            <img class="photo-img" src="~/cityimages/newyork.jpg" alt="Sample Image" width="300" />
+        </div>
+        <div class="photo-index-card">
+            <img class="photo-img" src="~/cityimages/yosemite.jpg" alt="Sample Image" width="300" />
+        </div>
+        <div class="photo-index-card">
+            <img class="photo-img" src="~/cityimages/grandcanyon.jpg" alt="Sample Image" width="300" />
+        </div>
+        <div class="photo-index-card">
+            <img class="photo-img" src="~/cityimages/seoul.jpg" alt="Sample Image" width="300" />
+        </div>
+    </div>
+    <div class="button-center">
+        @Html.ActionLink("Next", "Index", "City")
+    </div>
+</body>
+</html>

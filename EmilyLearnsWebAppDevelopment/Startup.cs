@@ -10,6 +10,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Http;
 using EmilyLearnsWebAppDevelopment.Models;
 using EmilyLearnsWebAppDevelopment.Services;
+using EmilyLearnsWebAppDevelopment.Filters;
 
 namespace EmilyLearnsWebAppDevelopment
 {
@@ -28,11 +29,13 @@ namespace EmilyLearnsWebAppDevelopment
             services.AddSingleton<ICreationData, CreationData>(); // Module 1
             services.AddSingleton<IPollResultsService, PollResultsService>(); // Module 3
             services.AddMvc(); // Module 3
+            services.AddSingleton<ICityData, CityData>(); // Module 4
+            //services.AddScoped<CityLogActionFilterAttribute>(); // Module 4
             services.AddControllersWithViews();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        //public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        //public void Configure(IApplicationBuilder app, IWebHostEnvironment env) // Saving this in case something breaks later
         //{
         //    if (env.IsDevelopment())
         //    {
@@ -91,6 +94,21 @@ namespace EmilyLearnsWebAppDevelopment
             app.UseStaticFiles();
 
             //app.UseMvcWithDefaultRoute(); // Module 3
+
+            //app.UseMvc(routes =>
+            //{
+            //    routes.MapRoute(
+            //         name: "TravelerRoute",
+            //         template: "{controller}/{action}/{name}",
+            //         constraints: new { name = "[A-Za-z ]+" },
+            //         defaults: new { controller = "Traveler", action = "Index", name = "Katie Bruce" });
+
+            //    routes.MapRoute(
+            //        name: "defaultRoute",
+            //        template: "{controller}/{action}/{id?}",
+            //        defaults: new { controller = "Home", action = "Index" },
+            //        constraints: new { id = "[0-9]+" });
+            //}); // Module 4
 
             app.UseRouting();
 
