@@ -116,3 +116,7 @@ C:\Users\emily\Desktop\CSC390 Developing ASP.NET Web Applications\EmilyLearnsWeb
 C:\Users\emily\Desktop\CSC390 Developing ASP.NET Web Applications\EmilyLearnsWebAppDevelopment\EmilyLearnsWebAppDevelopment\obj\Release\netcoreapp3.1\Razor\Views\City\Index.cshtml.g.cs
 C:\Users\emily\Desktop\CSC390 Developing ASP.NET Web Applications\EmilyLearnsWebAppDevelopment\EmilyLearnsWebAppDevelopment\obj\Release\netcoreapp3.1\Razor\Views\Poll\Index.cshtml.g.cs
 C:\Users\emily\Desktop\CSC390 Developing ASP.NET Web Applications\EmilyLearnsWebAppDevelopment\EmilyLearnsWebAppDevelopment\obj\Release\netcoreapp3.1\Razor\Views\Traveler\Index.cshtml.g.cs
+C:\Users\emily\Desktop\CSC390 Developing ASP.NET Web Applications\EmilyLearnsWebAppDevelopment\EmilyLearnsWebAppDevelopment\obj\Release\netcoreapp3.1\Razor\Views\Cat\ShowCats.cshtml.g.cs
+C:\Users\emily\Desktop\CSC390 Developing ASP.NET Web Applications\EmilyLearnsWebAppDevelopment\EmilyLearnsWebAppDevelopment\obj\Release\netcoreapp3.1\Razor\Views\Cat\ShowDataForCat.cshtml.g.cs
+C:\Users\emily\Desktop\CSC390 Developing ASP.NET Web Applications\EmilyLearnsWebAppDevelopment\EmilyLearnsWebAppDevelopment\obj\Release\netcoreapp3.1\Razor\Views\Shared\Components\Cat\SelectCat.cshtml.g.cs
+C:\Users\emily\Desktop\CSC390 Developing ASP.NET Web Applications\EmilyLearnsWebAppDevelopment\EmilyLearnsWebAppDevelopment\obj\Release\netcoreapp3.1\Razor\Views\Shared\_CatData.cshtml.g.cs
