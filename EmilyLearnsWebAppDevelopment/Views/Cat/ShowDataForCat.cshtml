@@ -1,0 +1,24 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ShowDataForCat</title>
+    <link rel="stylesheet" type="text/css" href="~/css/catstyle.css" />
+</head>
+<body>
+    <div>
+        <h2>@ViewBag.Cat.Name</h2>
+        <p>Breed: @ViewBag.Cat.Breed</p>
+        <p>Birthday: @ViewBag.Cat.Birthday</p>
+        <span><img src="@Url.Action("GetImage", new { catName = ViewBag.Cat.Name })" /></span>
+        @await Html.PartialAsync("_CatData") 
+        <a asp-action="ShowCats">Back</a>
+    </div>
+</body>
+</html>

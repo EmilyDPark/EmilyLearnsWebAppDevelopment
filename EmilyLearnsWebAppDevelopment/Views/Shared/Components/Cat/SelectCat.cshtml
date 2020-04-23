@@ -1,0 +1,6 @@
+﻿<div>
+    <h2>
+        <a asp-action="ShowDataForCat" asp-route-catname=@ViewBag.CurrentCat.Name>@ViewBag.CurrentCat.Name (Destroyer of @ViewBag.CurrentCat.Title)</a>
+    </h2>
+    <img src="@Url.Action("GetImage", new { catName = ViewBag.CurrentCat.Name })" />
+</div>

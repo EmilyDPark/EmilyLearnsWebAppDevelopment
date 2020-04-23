@@ -31,6 +31,7 @@ namespace EmilyLearnsWebAppDevelopment
             services.AddMvc(); // Module 3
             services.AddSingleton<ICityData, CityData>(); // Module 4
             //services.AddScoped<CityLogActionFilterAttribute>(); // Module 4
+            services.AddSingleton<ICatProvider, CatProvider>();
             services.AddControllersWithViews();
         }
 

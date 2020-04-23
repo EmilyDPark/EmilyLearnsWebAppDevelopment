@@ -1,0 +1,25 @@
+﻿@*@{
+        ViewData["Title"] = "ShowCats";
+    }*@
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ShowCats</title>
+    <link rel="stylesheet" type="text/css" href="~/css/catstyle.css" />
+</head>
+<body>
+    <h1>Select Cat</h1>
+    @foreach (var item in ViewBag.Cats)
+    {
+        @await Component.InvokeAsync("Cat", item.Key)
+    }
+    <a asp-controller="Home" asp-action="Index">Home</a>
+</body>
+</html>
